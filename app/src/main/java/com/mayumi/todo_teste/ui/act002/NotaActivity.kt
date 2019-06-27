@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.mayumi.todo_teste.R
 import com.mayumi.todo_teste.banco.Constantes
@@ -35,8 +36,13 @@ class NotaActivity : AppCompatActivity() {
 
     private fun initActions() {
         form_btn_salvar.setOnClickListener {
-            salvar()
-            chamarLista()
+            var texto = et_nota.text.toString()
+            if (texto.trim().isEmpty()) {
+                Toast.makeText(context, "Digite sua nota", Toast.LENGTH_SHORT).show()
+            } else {
+                salvar()
+                chamarLista()
+            }
         }
     }
 
