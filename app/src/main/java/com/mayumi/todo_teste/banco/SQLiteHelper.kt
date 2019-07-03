@@ -19,6 +19,7 @@ class SQLiteHelper (
             sb.append(
                 "CREATE TABLE IF NOT EXISTS [notas] (\n" +
                         "  [idnota] INT NOT NULL, \n" +
+                        "  [titulo] INT NOT NULL, \n" +
                         "  [nota] TEXT NOT NULL, \n" +
                         "  CONSTRAINT [] PRIMARY KEY ([idnota]));"
             )

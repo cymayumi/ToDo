@@ -4,31 +4,52 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:padding="15dp">
-
     <TextView
-            android:text="Adicione sua anotação"
-            android:layout_gravity="center"
-            android:textSize="30sp"
-            android:layout_marginTop="200dp"
+            android:text="Título"
+            android:textColor="#686767"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:id="@+id/et_titulo_nota"
+            android:textColor="#686767"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:inputType="textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borda"/>
+    <TextView
+            android:text="Sua anotação"
+            android:textColor="#686767"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     <EditText
             android:id="@+id/et_nota"
-            android:layout_marginTop="30dp"
+            android:textColor="#686767"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="15dp"
+            android:background="@drawable/borda"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="300dp"/>
 
 
     <Button
             android:textColor="#FFFFFF"
             android:background="#4A40A5"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:id="@+id/form_btn_salvar"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Salvar"
+            android:text="Add ToDo"
     />
 
 

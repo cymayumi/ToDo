@@ -16,8 +16,7 @@ open class Dao (
             null,
             Constantes.VERSAO
         )
-
-        this.db = helper.writableDatabase // é nesse momento que o banco é criado
+        this.db = helper.writableDatabase
     }
 
     fun fecharBanco() {

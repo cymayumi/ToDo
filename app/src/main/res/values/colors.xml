@@ -2,5 +2,8 @@
 <resources>
     <color name="colorPrimary">#4A40A5</color>
     <color name="colorPrimaryDark">#4A40A5</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#1F9BDF</color>
+
+    <color name="corCelApagar">#99F1ACCA</color>
+    <color name="corCel">#FBFBFC</color>
 </resources>
